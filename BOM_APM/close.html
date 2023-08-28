@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>window.close() -> closes the current window, or the window on which it was called.</p>
+	<br>
+	<button onclick="openWindow()">Click this to go to new tab.</button><br><br>
+	<button onclick="closeOpenedWindow()">Click this to close new tab.</button>
+	<script type="text/javascript">
+		let openedWindow;
+
+		function openWindow() {
+			openedWindow = window.open("moreinfo.htm");
+		}
+
+		function closeOpenedWindow() {
+			openedWindow.close();
+		}
+	</script>
+</body>
+</html>

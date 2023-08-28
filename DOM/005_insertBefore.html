@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <title>createElement</title>
+     </head>
+     <body>
+        <div id="parentElement">
+             <div id="childElement">First Child Element Div</div>
+             <div id="Second_childElement">Second Child Element Div</div>
+        </div>
+        <script>
+            /* Get parent div by it's id */
+            const parentElement = document.getElementById('parentElement');
+            
+            /* Create heading 1 (h1) element */
+            const h1 = document.createElement('h1');
+            
+            /* Add a text of "My First JavaScript Project" to the h1 element */
+            h1.textContent = 'My First JavaScript Project';
+            
+            /* Insert the h1 before the first child of the parentElement */
+            parentElement.insertBefore(h1, Second_childElement);
+        </script>
+     </body>
+</html>

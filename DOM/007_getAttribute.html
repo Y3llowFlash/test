@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <title>Data Attribute</title>
+     </head>
+     <body>
+        <div id="data"><h1>My first Javascript Project</h1></div>
+     </body>
+     <script>
+        var div_value=document.getElementById('data').innerText;
+        document.write(div_value,"<br>");
+        
+        var div1 = document.getElementById('data');
+        document.write(div1,"<br>");            
+        
+        const exampleAttr = div1.getAttribute('id');
+        document.write(exampleAttr,"<br>");
+        //=> "data"
+        
+        const title = div1.getAttribute('title');
+        document.write(title,"<br>");
+        //=> null
+
+     </script>
+</html>

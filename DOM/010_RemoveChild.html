@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>The removeChild() Method</h2>
+<p>Click "Remove" to remove the selected item from the list:</p>
+<button onclick="myColor()">Remove</button>
+<ul id="myList">
+     <li>Red</li>
+     <li>Green</li>
+     <li>Blue</li>
+     <li>Pink</li>
+</ul>
+<script>
+function myColor() {
+     const list = document.getElementById("myList");
+     list.removeChild(list.children[2]);
+}
+</script>
+</body>
+</html>

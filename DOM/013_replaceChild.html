@@ -1,0 +1,27 @@
+<html>
+<head>
+       <title>Replace a child node with a new node in JavaScript</title>
+</head>
+<body >
+    <h3>Replace a child node with a new node in JavaScript using replaceChild()</h3>
+    
+    <ul id="color">
+        <li>White</li>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>
+       
+    <p>Click "Replace" to replace the item.</p>
+       
+    <button onclick="replaceFunction()">Replace</button>
+       
+    <script>
+             function replaceFunction() {
+                    const old1 = document.getElementById("color").children[0]; 
+                    const new1 = document.createTextNode("Black");
+                    old1.replaceChild(new1, old1.childNodes[0]); 
+             }
+   </script>
+</body>
+</html>

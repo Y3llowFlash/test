@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>window.open() -> opens a new browser window, or a new tab, depending on your browser settings and the parameter values.
+	Syntax: open(), open(url), open(url,target), open(url,target,windowFeatures)
+	Value of target attributes: _blank - opens link in a new tab or window
+	_parent - opens link in parent frame
+	_self - opens link in current frame
+	_top - opens link in top-most frame
+	frame name - opens link in named frame</p>
+	<p>window.close() -> closes the current window, or the window on which it was called.</p>
+	<br>
+	<button onclick="newWindow()">Click this to go to Google.</button><br><br>
+	<button onclick="closeWindow()">Click this to close new tab.</button>
+	<script type="text/javascript">
+		let Window;
+		function newWindow(){
+			Window = window.open("https://www.google.com/","","width = 500, height = 500");
+		}
+		function closeWindow(){
+			Window.close();
+		}
+	</script>
+</body>
+</html>

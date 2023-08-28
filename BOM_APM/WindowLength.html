@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<iframe src="https://www.programiz.com/"></iframe>
+	<iframe src="http://www.google.com/"></iframe>
+	<iframe src="http://www.gmail.com/"></iframe>
+	<button onclick="findwl()">Find window length</button>
+	<p>The length is:</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		/window.length -> returns number of frames(either <frame> or <iframe> elements) in window/
+		function findwl(){
+			var x = window.length;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<a id="myAnchor" href="https://example.org:8080/foo/bar?q=baz#bang"></a>
+	<p>
+		hash	:	Returns anchor part of a URL.
+		host	:	Returns hostname and port number of URL.
+		pathname,port	:	Returns path or nort number of URL.
+		hostname	:	Returns hostname of a URL.
+		origin	:	Returns protocol, hostname and portname of a URL.
+		href	: 	Returns a string containing the entire URL
+		assign()	:	Loads new document.
+		reload()	:	Reload current document.
+		replace()	:	Replace current document.
+	</p>
+	<script type="text/javascript">
+ 		const anchor = document.getElementById("myAnchor");
+ 		let result = anchor.hash;  document.write("location.hash : ",result,"<br>");
+ 		result=anchor.host;
+ 		document.write("location.host : ",result,"<br>");
+ 		result=anchor.pathname;
+ 		document.write("location.pathname : ",result,"<br>");
+ 		result=anchor.port;
+ 		document.write("location.port : ",result,"<br>");
+ 		result=anchor.hostname;
+ 		document.write("location.hostname : ",result,"<br>");
+		result=anchor.origin;
+		document.write("location.origin : ",result,"<br>");
+ 		result=anchor.search;
+ 		document.write("location.search : ",result,"<br>");
+ 		result=anchor.href;
+ 		document.write("location.href : ",result,"<br>");
+	</script>
+
+</body>
+</html>

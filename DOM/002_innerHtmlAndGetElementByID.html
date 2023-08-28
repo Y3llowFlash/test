@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center">
+    <h1 style="color:green">
+        Javascript DOM
+    </h1>
+    <h2>DOM innerHTML Property</h2>
+    <p id="A">Document Object Model Manipulation</p>
+    <button onclick="getText()">Try it</button>
+    <p id="a"></p>  
+    <script>
+    function getText() {
+        var x = document.getElementById("A").innerHTML;
+        document.getElementById("a").innerHTML = x;
+        document.getElementById("a").style.color = "blue";
+        document.getElementById("a").style.fontSize="20px";
+    }
+    </script>
+</body>
+</html>

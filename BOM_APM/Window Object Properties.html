@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<iframe src="https://www.youtube.com"></iframe>
+	<iframe src="https://www.bbc.com"></iframe>
+	<iframe src="https://google.com"></iframe>
+
+	<script type="text/javascript">
+		/**window.closed -> read-only property, returns true or false
+		 window.document -> returns a reference to the document contained in the window
+		 window.history ->  read-only property, returns a reference to the History object, which provides an interface for manipulating the browser session history, contains URLs visited by the user
+		 window.frames -> returns the window itself, which is an array-like object, listing the direct sub-frames of the current window
+		 window.innerWidth -> Returns the inner width of a window's content area 
+		 window.innerHeight -> Returns the inner height of a window's content area 
+		 window.outerWidth -> Returns the outer width of a window, including toolbars(or)scrollbars
+		 window.outerHeight -> Returns the outer height of a window, including toolbars(or)scrollbars
+		 window.location -> read-only property,  returns a Location object with information about the current location of the document
+		 window.parent -> a reference to the parent of the current window or subframe, if a window does not have a parent, its parent property is a reference to itself, when a window is loaded in an <iframe>, <object>, or <frame>, its parent is the window with the element embedding the window
+		 window.defaultStatus -> sets or returns the default text in the status bar at the bottom of the browser 
+		 window.status ->  sets the text in the status bar at the bottom of the browser, or returns the previously set text
+		 
+		 **/
+		function checkWin(){
+			if(myWindow.closed){
+				document.getElementById("msg").innerHTML = "'myWindow' has been closed!";
+			}
+			else{
+				document.getElementById("msg").innerHTML = "'myWindow' has not been closed!";	
+			}
+		}
+		function myFunction(){
+			var frames = window.frames;
+			var i;
+			for (i = 0; i < frames.length; i++){
+				frames[i].location = "https://www.w3schools.com"
+			}
+		}
+	alert(location)		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History Object</title>
+</head>
+<body>
+	<div>
+		<p>
+			window.history gives you information regarding the user's history. <br>
+			length		:	 Return the length of the user's history.
+			back(),forward()	:	 Move the user forward or back a page.
+			go()		:	 Loads specific URL from history list.
+		</p>
+		<p>
+			History Object Property - history.length<br>
+			The length property returns the number of URLs in the history list of the current browser window.
+			The property returns at least 1, because the list includes the current page.
+			This property is useful to find out how many pages the user has visited in the current browsing session.
+		</p>
+
+		<p>
+			History Object Method - back(), forward(), go(num)<br>
+			The history.go() method loads a URL (page) from the history list.
+			The history.go() method only works if the page exist in the history list.
+			<br>history.go(0) reloads the page.
+			<br>history.go(-1) is the same as history.back().
+			<br>history.go(1) is the same as history.forward().
+		</p>
+	</div>
+</body>
+</html>
